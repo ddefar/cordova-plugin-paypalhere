@@ -35,7 +35,13 @@
 	
 	NSString* invoice = [command.arguments objectAtIndex:0];
 
-	pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:(true)];
+	if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:invoice]]) {
+		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:invoice]];
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:(true)];
+    }
+    else {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsBool:(false)];
+    }
 
 	[self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 

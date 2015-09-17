@@ -20,9 +20,7 @@ var payPalHere = {
 
     makePayment: function(pphereUrl, successCallback, errorCallback) {
     	
-		console.log(pphereUrl);
-
-        cordova.exec(
+		cordova.exec(
             successCallback,
             errorCallback,
             "PayPalHere",
