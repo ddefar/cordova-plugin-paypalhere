@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-paypalhere"
+        version="0.0.1">
+    
+    <name>PayPalHere</name>
+    
+    <description>This plugin for Cordova allows you to communicate with the PayPal Here application from your own Cordova application. It requires an URI Scheme (iOS) or a Package Name (Android).</description>
+    
+    <keywords>Cordova,plugin,app,paypal,here,URIScheme,URI,Scheme,PackageName,Package,Name,iOS</keywords>
+    
+    <repo>https://github.com/ddefar/cordova-plugin-paypalhere.git</repo>
+    
+    <license>Masinerija</license>
+    
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    
+    <js-module src="www/PayPalHere.js" name="PayPalHere">
+        <clobbers target="payPalHere" />
+    </js-module>
+    
+    <!-- iOS -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="PayPalHere">
+                <param name="ios-package" value="PayPalHere" />
+            </feature>
+        </config-file>
+        
+        <header-file src="src/ios/PayPalHere.h" />
+        <source-file src="src/ios/PayPalHere.m" />
+    </platform>
+    
+</plugin>
