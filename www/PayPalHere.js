@@ -29,7 +29,7 @@ var payPalHere = {
         var retUrl = encodeURIComponent(uri + "?{result}?Type={Type}&InvoiceId={InvoiceId}&Tip={Tip}&Email={Email}&TxId={TxId}");
         var pphereUrl = "paypalhere://takePayment?accepted=" + encodeURIComponent("cash,card,paypal") + "&returnUrl=" + retUrl;
         pphereUrl += "&InvoiceId=" + invoiceId + "&as=b64&payerPhone=5551234567&step=choosePayment" + "&invoice=" + btoa(JSON.stringify(invoice));
-console.log('*****', pphereUrl);
+
 		cordova.exec(
             successCallback,
             errorCallback,
