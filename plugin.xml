@@ -36,6 +36,21 @@
 
         <source-file src="src/ios/PayPalHere/PayPalHereSDK" framework="true" />
         <header-file src="src/ios/PayPalHere/PayPalHereSDK.h" />
+        <header-file src="src/ios/PayPalHere/PPHCardReaderManager.h" />
+        <header-file src="src/ios/PayPalHere/PPHCardSwipeData.h" />
+        <header-file src="src/ios/PayPalHere/PPHError.h" />
+
+        <header-file src="src/ios/PayPalHere/PPHNetworkRequestDelegate.h" />
+        <header-file src="src/ios/PayPalHere/PPHPaymentProcessor.h" />
+        <header-file src="src/ios/PayPalHere/PPHChipAndPinEvent.h" />
+        <header-file src="src/ios/PayPalHere/PPHInvoice.h" />
+        <header-file src="src/ios/PayPalHere/PPHMerchantInfo.h" />
+        <header-file src="src/ios/PayPalHere/PPHLocalManager.h" />
+        <header-file src="src/ios/PayPalHere/PPHLoggingDelegate.h" />
+        <header-file src="src/ios/PayPalHere/PPHAccessResultType.h" />
+        <header-file src="src/ios/PayPalHere/PPHTransactionManager.h" />
+
+
     </platform>
     
 </plugin>
