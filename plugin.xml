@@ -33,7 +33,7 @@
         
         <header-file src="src/ios/PayPalHere.h" />
         <source-file src="src/ios/PayPalHere.m" />
-        <framework src="src/ios/libs/PayPalHereSDK.framework" />
+        <framework src="src/ios/libs/PayPalHereSDK.framework" weak="true"/>
     </platform>
     
 </plugin>
