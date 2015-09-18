@@ -33,7 +33,7 @@
         
         <header-file src="src/ios/PayPalHere.h" />
         <source-file src="src/ios/PayPalHere.m" />
-
+        <!--
         <source-file src="src/ios/PayPalHere/PayPalHereSDK" framework="true" />
         <header-file src="src/ios/PayPalHere/PayPalHereSDK.h" />
         <header-file src="src/ios/PayPalHere/PPHCardReaderManager.h" />
@@ -49,6 +49,9 @@
         <header-file src="src/ios/PayPalHere/PPHLoggingDelegate.h" />
         <header-file src="src/ios/PayPalHere/PPHAccessResultType.h" />
         <header-file src="src/ios/PayPalHere/PPHTransactionManager.h" />
+        -->
+
+        <framework src="src/ios/PayPalHere/PayPalHereSDK" />
 
 
     </platform>
