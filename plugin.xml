@@ -52,6 +52,10 @@
         -->
 
         <framework src="src/ios/PayPalHere/PayPalHereSDK" />
+        <header-file src="src/ios/PayPalHere/PayPalHereSDK.h" />
+        <header-file src="src/ios/PayPalHere/PPHCardReaderManager.h" />
+        <header-file src="src/ios/PayPalHere/PPHCardSwipeData.h" />
+        <header-file src="src/ios/PayPalHere/PPHError.h" />
 
 
     </platform>
