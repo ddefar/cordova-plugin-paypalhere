@@ -29,11 +29,19 @@
 	[self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
+
+- (void)init:(CDVInvokedUrlCommand *)command {
+  [self.commandDelegate runInBackground:^{
+    [PayPalHereSDK selectEnvironmentWithType:ePPHSDKServiceType_Sandbox];
+    
+    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+  }];
+}
+
 - (void)sendPaymentRequest:(CDVInvokedUrlCommand*)command {
 
 	CDVPluginResult* pluginResult = nil;
-
-    PPHCardReaderManager* cardReader = [PayPalHereSDK getCardReaderManager];
     
 	
 	NSString* invoice = [command.arguments objectAtIndex:0];

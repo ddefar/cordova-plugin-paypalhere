@@ -6,6 +6,8 @@
 
 - (void)isSwiperPluggedIn:(CDVInvokedUrlCommand*)command;
 
+- (void)init:(CDVInvokedUrlCommand*)command;
+
 - (void)sendPaymentRequest:(CDVInvokedUrlCommand*)command;
 
 @end

@@ -18,6 +18,15 @@ var payPalHere = {
         );
     },
 
+    init: function(successCallback, errorCallback) {
+        cordova.exec(
+            successCallback,
+            errorCallback,
+            "PayPalHere",
+            "init"
+        );
+    },
+
     makePayment: function(invoiceData, successCallback, errorCallback) {
     	
         var payer = encodeURIComponent(invoiceData.payer);
