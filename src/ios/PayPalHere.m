@@ -32,7 +32,7 @@
 
 - (void)init:(CDVInvokedUrlCommand *)command {
   [self.commandDelegate runInBackground:^{
-    [PayPalHereSDK selectEnvironmentWithType:ePPHSDKServiceType_Sandbox];
+    [[PayPalHereSDK sharedCardReaderManager] beginMonitoring];
     
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
