@@ -32,6 +32,9 @@
 - (void)sendPaymentRequest:(CDVInvokedUrlCommand*)command {
 
 	CDVPluginResult* pluginResult = nil;
+
+    PPHCardReaderManager* cardReader = [PayPalHereSDK getCardReaderManager];
+    
 	
 	NSString* invoice = [command.arguments objectAtIndex:0];
 
