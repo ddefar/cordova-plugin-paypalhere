@@ -49,13 +49,34 @@
         <header-file src="src/ios/PayPalHere/PPHLoggingDelegate.h" />
         <header-file src="src/ios/PayPalHere/PPHAccessResultType.h" />
         <header-file src="src/ios/PayPalHere/PPHTransactionManager.h" />
-        -->
-
-        <framework src="src/ios/PayPalHere/PayPalHereSDK" />
-        <header-file src="src/ios/PayPalHere/PayPalHereSDK.h" />
-        <header-file src="src/ios/PayPalHere/PPHCardReaderManager.h" />
-        <header-file src="src/ios/PayPalHere/PPHCardSwipeData.h" />
-        <header-file src="src/ios/PayPalHere/PPHError.h" />
+     
+        <source-file src="libs/ios/PayPalHereSDK.framework/Versions/A/PayPalHereSDK" framework="true" />
+         -->
+        
+        <framework src="libs/ios/PayPalHereSDK.framework" custom="true" />
+<!--
+        <header-file src="libs/ios/PayPalHereSDK.framework/Versions/A/Headers/PayPalHereSDK.h" />
+        <header-file src="libs/ios/PayPalHereSDK.framework/Versions/A/Headers/PPHCardReaderManager.h" />
+        <header-file src="libs/ios/PayPalHereSDK.framework/Versions/A/Headers/PPHCardSwipeData.h" />
+        <header-file src="libs/ios/PayPalHereSDK.framework/Versions/A/Headers/PPHError.h" />
+     -->
+        <framework src="Accelerate.framework" />
+        <framework src="ExternalAccessory.framework" />
+        <framework src="AudioToolbox.framework" />
+        <framework src="AVFoundation.framework" />
+        <framework src="CFNetwork.framework" />
+        <framework src="CoreGraphics.framework" />
+        <framework src="CoreLocation.framework" weak="true" />
+        <framework src="CoreMedia.framework" weak="true" />
+        <framework src="CoreVideo.framework"/>
+        <framework src="MessageUI.framework" />
+        <framework src="OpenGLES.framework" />
+        <framework src="MobileCoreServices.framework" />
+        <framework src="Security.framework" />
+        <framework src="SafariServices.framework"/>
+        <framework src="SystemConfiguration.framework" />
+        <framework src="QuartzCore.framework"/>
+        <framework src="UIKit.framework"/>
 
 
     </platform>

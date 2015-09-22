@@ -1,6 +1,7 @@
 #import "PayPalHere.h"
 #import <Cordova/CDV.h>
 
+
 @implementation PayPalHere
 
 - (void)isInstalled:(CDVInvokedUrlCommand*)command {
