@@ -33,7 +33,7 @@
 
 - (void)init:(CDVInvokedUrlCommand *)command {
   [self.commandDelegate runInBackground:^{
-    [PayPalHereSDK selectEnvironmentWithType:ePPHSDKServiceType_Sandbox];
+    /*[PayPalHereSDK selectEnvironmentWithType:ePPHSDKServiceType_Sandbox];*/
 
     //[[PayPalHereSDK sharedCardReaderManager] beginMonitoring];
     

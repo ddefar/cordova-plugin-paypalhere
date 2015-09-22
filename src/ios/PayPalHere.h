@@ -1,5 +1,5 @@
 #import <Cordova/CDV.h>
-#import <PayPalHereSDK/PayPalHereSDK.h>
+/*#import <PayPalHereSDK/PayPalHereSDK.h>*/
 
 @interface PayPalHere : CDVPlugin
 

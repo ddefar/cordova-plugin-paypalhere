@@ -52,9 +52,9 @@
      
         <source-file src="libs/ios/PayPalHereSDK.framework/Versions/A/PayPalHereSDK" framework="true" />
          -->
-        
+        <!--
         <framework src="libs/ios/PayPalHereSDK.framework" custom="true" />
-<!--
+
         <header-file src="libs/ios/PayPalHereSDK.framework/Versions/A/Headers/PayPalHereSDK.h" />
         <header-file src="libs/ios/PayPalHereSDK.framework/Versions/A/Headers/PPHCardReaderManager.h" />
         <header-file src="libs/ios/PayPalHereSDK.framework/Versions/A/Headers/PPHCardSwipeData.h" />
