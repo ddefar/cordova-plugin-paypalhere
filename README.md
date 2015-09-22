@@ -6,7 +6,7 @@ It can check weather the PayPal Here app is installed, and request it to make a 
 ## Installation
 
 ```
-cordova plugin add https://github.com/ddefar/cordova-plugin-paypalhere.git
+cordova plugin add https://github.com/ddefar/cordova-plugin-paypalhere.git --variable URL_SCHEME=butter
 ```
 
 ## Usage

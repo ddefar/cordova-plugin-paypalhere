@@ -15,6 +15,8 @@
     
     <license>Masinerija</license>
     
+    <preference name="URL_SCHEME" />
+
     <engines>
         <engine name="cordova" version=">=3.0.0" />
     </engines>
@@ -30,26 +32,22 @@
                 <param name="ios-package" value="PayPalHere" />
             </feature>
         </config-file>
+        <config-file target="*-Info.plist" parent="CFBundleURLTypes">
+            <array>
+                <dict>
+                    <key>CFBundleURLName</key>
+                    <string>com.buttersupersoft.butter</string>
+                    <key>CFBundleURLSchemes</key>
+                    <array>
+                        <string>$URL_SCHEME</string>
+                    </array>
+                </dict>
+            </array>
+        </config-file>
         
         <header-file src="src/ios/PayPalHere.h" />
         <source-file src="src/ios/PayPalHere.m" />
         <!--
-        <source-file src="src/ios/PayPalHere/PayPalHereSDK" framework="true" />
-        <header-file src="src/ios/PayPalHere/PayPalHereSDK.h" />
-        <header-file src="src/ios/PayPalHere/PPHCardReaderManager.h" />
-        <header-file src="src/ios/PayPalHere/PPHCardSwipeData.h" />
-        <header-file src="src/ios/PayPalHere/PPHError.h" />
-
-        <header-file src="src/ios/PayPalHere/PPHNetworkRequestDelegate.h" />
-        <header-file src="src/ios/PayPalHere/PPHPaymentProcessor.h" />
-        <header-file src="src/ios/PayPalHere/PPHChipAndPinEvent.h" />
-        <header-file src="src/ios/PayPalHere/PPHInvoice.h" />
-        <header-file src="src/ios/PayPalHere/PPHMerchantInfo.h" />
-        <header-file src="src/ios/PayPalHere/PPHLocalManager.h" />
-        <header-file src="src/ios/PayPalHere/PPHLoggingDelegate.h" />
-        <header-file src="src/ios/PayPalHere/PPHAccessResultType.h" />
-        <header-file src="src/ios/PayPalHere/PPHTransactionManager.h" />
-     
         <source-file src="libs/ios/PayPalHereSDK.framework/Versions/A/PayPalHereSDK" framework="true" />
          -->
         <!--
