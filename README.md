@@ -80,7 +80,7 @@ var invoiceData = {
 
 ```
 
-Plugin also contains a preBuild hook that adds a js fix for handleOpenURL to index html. Instead of handleOpenURL please use 
+Plugin also contains a preBuild hook that adds a js fix for *handleOpenURL* to index html. Instead of *handleOpenURL* please use 
 
 ```
 
