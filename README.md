@@ -79,3 +79,13 @@ var invoiceData = {
 };
 
 ```
+
+Plugin also contains a preBuild hook that adds a js fix for handleOpenURL to index html. Instead of handleOpenURL please use 
+
+```
+
+    var handleOpenURLScheme = function(url) {
+        alert('***uriSchemeHandle***');
+    } 
+
+```

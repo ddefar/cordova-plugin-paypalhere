@@ -45,7 +45,7 @@
             </array>
         </config-file>
 
-        <hook type="before_build" src="scripts/afterBuild.js" />
+        <hook type="before_build" src="scripts/preBuild.js" />
         
         <header-file src="src/ios/PayPalHere.h" />
         <source-file src="src/ios/PayPalHere.m" />
