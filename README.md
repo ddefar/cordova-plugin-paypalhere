@@ -45,38 +45,38 @@ Example of *invoiceData*:
 
 ```
 var invoiceData = {
-    "payer": "some@email.dom",
-    "invoiceId": "jd84yr",
-    "number": "676879",
-    "uri": "butterapp//",
-    "invoice": {
-        "paymentTerms": "DueOnReceipt",
-        "discountPercent": "0",
-        "currencyCode": "USD",
-        "number": "1457",
-        "payerEmail": "foo@bar.com",
-        "itemList": {
-            "item": [
-                {
-                    "taxRate": "8.5000",
-                    "name": "Curtains",
-                    "description": "Blue curtains",
-                    "unitPrice": "29.99",
-                    "taxName": "Tax",
-                    "quantity": "1"
-                },
-                {
-                    "taxRate": "0",
-                    "name": "Delivery Fee",
-                    "description": "Delivery Fee",
-                    "unitPrice": "5.0",
-                    "taxName": "Tax",
-                    "quantity": "1"
+            "payer": "d.defar@gmail.com",
+            "invoiceId": "lplpy64yr9",
+            "number": "6j998799",
+            "uri": "butter://hfeifhie",
+            "invoice": {
+                "paymentTerms": "DueOnReceipt",
+                "discountPercent": "0",
+                "currencyCode": "USD",
+                //"number": "14576",
+                "payerEmail": "d.defar@gmail.com",
+                "itemList": {
+                    "item": [
+                        {
+                            "taxRate": "8.5000",
+                            "name": "Curtains",
+                            "description": "Blue curtains",
+                            "unitPrice": "29.99",
+                            "taxName": "Tax",
+                            "quantity": "1"
+                        },
+                        {
+                            "taxRate": "0",
+                            "name": "Delivery Fee",
+                            "description": "Delivery Fee",
+                            "unitPrice": "5.0",
+                            "taxName": "Tax",
+                            "quantity": "1"
+                        }
+                    ]
                 }
-            ]
-        }
-    }
-};
+            }
+        };
 
 ```
 
