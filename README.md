@@ -49,6 +49,7 @@ var invoiceData = {
             "invoiceId": "lplpy64yr9",
             "number": "6j998799",
             "uri": "butter://hfeifhie",
+            "payment_types": "cash,paypal",
             "invoice": {
                 "paymentTerms": "DueOnReceipt",
                 "discountPercent": "0",
